@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.8'
+gem 'rails', '3.2.12'
 gem 'bootstrap-sass', '2.0.0'
+gem 'jquery-rails', '2.0.2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -14,6 +15,7 @@ group :development, :test do
 end
 
 group :test do
+  gem 'capybara', '1.1.2'
   gem 'factory_girl_rails', '1.4.0'
   gem 'cucumber-rails', '1.2.1', require: false
   gem 'database_cleaner', '0.7.0'
@@ -29,12 +31,6 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.2.3'
-end
-
-gem 'jquery-rails'
-
-group :test do
-  gem 'capybara', '1.1.2'
 end
 
 group :production do
